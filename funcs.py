@@ -2,8 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
-from matplotlib.dates import MO, TU, WE, TH, FR, SA, SU
-import matplotlib.ticker as ticker
+from matplotlib.dates import SU
 from matplotlib.gridspec import GridSpec
 import os, re
 import datetime as dt

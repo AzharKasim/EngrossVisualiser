@@ -33,6 +33,7 @@ def main():
           """
 
     userChoice = int(input(msg))
+
     try:
         df_weekly, df_monthly, df_label = funcs.set_DataFrame(file, userChoice)
     except:
@@ -42,8 +43,8 @@ def main():
     print("Plotting graphs...")
     funcs.plot_Visual(df_weekly, df_monthly, df_label)
 
-    #filename = str(input("Enter filename to save as: "))
-    #plt.savefig(filename)
+    filename = str(input("Enter filename to save as: "))
+    plt.savefig(filename)
     plt.show()
 
     print("Program terminated.")

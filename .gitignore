@@ -2,3 +2,6 @@
 .engross_env
 *.png
 *.csv
+*.ipynb
+sampleData.py
+example.py
