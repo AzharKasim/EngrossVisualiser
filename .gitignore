@@ -1,2 +1,4 @@
 *.pyc
 .engross_env
+*.png
+*.csv

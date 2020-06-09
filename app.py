@@ -4,7 +4,7 @@ import funcs
 def main():
     plt.style.use('ggplot')
 
-    print("Engross Visualiser")
+    print("\nEngross Visualiser")
     print("Looking for Engross data...")
 
     try:
@@ -13,7 +13,7 @@ def main():
 
     except Exception as error:
 
-        print("Caught this error: {}".format(repr(error)))
+        print(f"Caught this error: {repr(error)}")
         print("Check if engross file is in the same folder.")
         return None
 
@@ -21,7 +21,8 @@ def main():
     print("Processing data...")
 
     msg = """
-          Choose time period:
+          Choose time period: (Enter 1-6)
+
           1. Lifetime
           2. Last 6 months
           3. This month
@@ -32,17 +33,16 @@ def main():
           """
 
     userChoice = int(input(msg))
-    #try:
-    df_weekly, df_monthly, df_label = funcs.set_dataFrame(file, userChoice)
-    # except:
-    #     print("Failed to extract data from Engross file.")
-    #     return None
+    try:
+        df_weekly, df_monthly, df_label = funcs.set_DataFrame(file, userChoice)
+    except:
+         print("Failed to extract data from Engross file.")
+         return None
 
     print("Plotting graphs...")
     funcs.plot_Visual(df_weekly, df_monthly, df_label)
 
     #filename = str(input("Enter filename to save as: "))
-
     #plt.savefig(filename)
     plt.show()
 
