@@ -12,6 +12,10 @@ Takes in a data(`csv`) from Engross and produces an image(`png`) of 3 graphs all
 2. Weekly Totals
 3. Labels-Distribution 
 
+## Example
+
+![  ] ( Image of sample data )
+
 ## How does it work?
 
 The following steps assumes that user already has python installed on the computer.
