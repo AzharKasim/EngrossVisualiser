@@ -28,3 +28,7 @@ The following steps assumes that user already has python and the required packag
 ## How to install the required packages?
 
 > pip install numpy pandas matplotlib
+
+## Future updates
+
+- A GUI program with ability to choose which timeframe you are interested to look at.
