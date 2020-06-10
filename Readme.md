@@ -14,7 +14,7 @@ Takes in a data(`csv`) from Engross and produces an image(`png`) of 3 graphs all
 
 ## Example
 
-![  ] ( Image of sample data )
+![ image of sample data ](/images/sample.png)
 
 ## How does it work?
 

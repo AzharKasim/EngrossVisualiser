@@ -1,5 +1,5 @@
 import matplotlib.pyplot as plt
-import funcs
+import functions
 
 def main():
     plt.style.use('ggplot')
@@ -9,7 +9,7 @@ def main():
 
     try:
 
-        file = funcs.findFile()
+        file = functions.findFile()
 
     except Exception as error:
 
@@ -35,13 +35,13 @@ def main():
     userChoice = int(input(msg))
 
     try:
-        df_weekly, df_monthly, df_label = funcs.set_DataFrame(file, userChoice)
+        df_weekly, df_monthly, df_label = functions.set_DataFrame(file, userChoice)
     except:
          print("Failed to extract data from Engross file.")
          return None
 
     print("Plotting graphs...")
-    funcs.plot_Visual(df_weekly, df_monthly, df_label)
+    functions.plot_Visual(df_weekly, df_monthly, df_label)
 
     filename = str(input("Enter filename to save as: "))
     plt.savefig(filename)
